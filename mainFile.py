@@ -27,4 +27,15 @@
       Mmhh, you have to split the string, right?
       Then insert the updated block where it should be, right?
       Plus, all blocks have the same width so we know when to cut
+
+    Also, how to access the answers for each element?
+    And how do we choose from the available groups?
+
+    I'm thinking we have a separate list with all possible elements to choose from.
+    We can fill that list by going through each group selected and inserting all
+    atomic numbers they have.
+    Then, we can have a loop going through them randomly, randomly choosing an element
+    to ask about and then popping their atomic number from the selection list.
+    Finally, we check if the list is empty yet, and if not then we keep going until it's done.  
 '''
+
