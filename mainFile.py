@@ -1,2 +1,15 @@
-#Let's start setting up an example hashmap for the Alkaline Metals
-from ptPrinting import printPeriodic 
+###Greeting
+
+print("\n***Welcome!*** \nType which groups you'd like from the following: \n")
+print("Alkaline metals, Alkaline earth metals, Post transition metals")
+print("Metalloids, Nonmetals, Halogens, Noble Gases")
+#print("Transition Metals, Lathanides, Actinides\n")
+
+userGroups = input("Please use commas to separate groups (i.e. halogens, noble gases): ")
+
+print(userGroups)
+
+##Neat trick I forgot about: You perform changes to an item in a list as you are creating the list
+chosenGroups = [group.replace(" ","") for group in userGroups.lower().split(",")]
+
+##End of first phase!

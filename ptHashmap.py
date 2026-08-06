@@ -7,7 +7,7 @@
               -> Symbol broken into rows
 '''
 periodicTable = {
-    "alkaline metals":{
+    "alkalineMetals":{
         3  : {"name":"lithium", "symbol":["█       ","█     █ ","█       ","█    ███","█     █ ","█████ ███"]},
         11 : {"name":"sodium", "symbol":["█   █     ","██  █     ","█ █ █  ███","█  ██ █   █","█   █ █████","█   █ █   █"]},
         19 : {"name":"potassium", "symbol":[" █   █"," █  █ "," ███  "," █  █ "," █  █ "," █   █"]},
@@ -15,7 +15,7 @@ periodicTable = {
         55 : {"name":"caesium", "symbol":["  ███         "," █   █  ███   "," █      █     "," █      ███   "," █   █     █  ","  ███   ███   "]},
         87 : {"name":"francium", "symbol":[" █████      "," █          "," ███   ███  "," █     █    "," █     █    "," █     █    "]}
     },
-    "alkaline earth metals":{
+    "alkalineEarthMetals":{
         4  : {"name":"beryllium", "symbol":[" ███        "," █  █       "," ███   ███  "," █  █ █████ "," █  █ █     "," ███  ███   "]},
         12 : {"name":"magnesium", "symbol":[" █   █       "," ██ ██  ███  "," █ █ █ █   █      "," █   █  ███"," █   █     █  "," █   █   ██"]},
         20 : {"name":"calcium", "symbol":["  ███        "," █   █       "," █      ███  "," █     █   █ "," █   █ █████ ","  ███  █   █ "]},
@@ -23,7 +23,7 @@ periodicTable = {
         56 : {"name":"barium", "symbol":[" ███        "," █  █       "," ███   ███  "," █  █ █   █ "," █  █ █████ "," ███  █   █ "]},
         88 : {"name":"radium", "symbol":[" ███        "," █  █       "," ███   ███  "," █ █  █   █ "," █  █ █████ "," █   ██   █ "]}
     },
-    "post transition metals":{
+    "postTransitionMetals":{
         13 : {"name":"aluminum", "symbol":["  ██     ██   "," █  █     █   "," █  █     █   "," ████     █   "," █  █     █   "," █  █    ███  "]},
         31 : {"name":"gallium", "symbol":["  ███        "," █   █       "," █      ███  "," █  ██ █   █ "," █   █ █████ ","  ███  █   █ "]},
         49 : {"name":"indium", "symbol":[" ███        ","  █          ","  █     ███  ","  █    █   █ ","  █    █   █ "," ███   █   █ "]},
@@ -57,7 +57,7 @@ periodicTable = {
         53 : {"name":"iodine", "symbol":[" ███  ","  █   ","  █   ","  █   ","  █   "," ███  "]},
         85 : {"name":"astatine", "symbol":["  ██     █    "," █  █    █    "," █  █   ████  "," ████    █    "," █  █    █    "," █  █    █    "]}
     },
-    "noble gases":{
+    "nobleGases":{
         2  : {"name":"helium", "symbol":[" █   █      "," █   █      "," █████  ███ "," █   █ █████"," █   █ █    "," █   █  ███ "]},
         10 : {"name":"neon", "symbol":[" █   █      "," ██  █      "," █ █ █  ███ "," █  ██ █████"," █   █ █    "," █   █  ███ "]},
         18 : {"name":"argon", "symbol":["  ██         "," █  █        "," █  █   ███  "," ████  █     "," █  █  █     "," █  █  █     "]},
