@@ -35,6 +35,7 @@ periodicTable = {
         52 : {"name":"tellerium", "atomicNumber":52, "symbol":[" █████       ","   █         ","   █    ███  ","   █   █████ ","   █   █     ","   █    ███  "]}
     },
     "nonmetals":{
+        1  : {"name":"hydrogen", "atomicNumber":1, "symbol":[" █   █"," █   █"," █████"," █   █"," █   █"," █   █"]},
         6  : {"name":"carbon", "atomicNumber":6, "symbol":["  ███  "," █   █ "," █     "," █     "," █   █ ","  ███  "]},
         7  : {"name":"nitrogen", "atomicNumber":7, "symbol":[" █   █"," ██  █"," █ █ █"," █  ██"," █   █"," █   █"]},
         8  : {"name":"oxygen", "atomicNumber":8, "symbol":["  ███  "," █   █ "," █   █ "," █   █ "," █   █ ","  ███  "]},
