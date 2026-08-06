@@ -1,6 +1,6 @@
-# Idea: Memorization game for Periodic Table
+#  Memorization game for Periodic Table
 
-### Process:
+## Process:
 <details>
 <Summary>General flowchart, updated 8/6/2026</Summary>
 
@@ -15,23 +15,23 @@
 
 </details>
 
-### Ideas
+## Ideas
+<details>
+<summary>Completed Ideas</summary>
 
-Since every element has an Atomic Number, we can just
+1. Since every element has an Atomic Number, we can just
 use that to figure out which row and column to write
 it into. 
 Only issue is knowing how to replace the slot
+```text
+    I.E.
+    [!-]        [!-]
+    to 
+    [!-]        [He]
+```
+- Mmhh, you have to split the string, right? Then insert the updated block where it should be, right? Plus, all blocks have the same width so we know when to cut the string.
 
-      I.E.
-      [!-]        [!-]
-      to 
-      [!-]        [He]
-
-Mmhh, you have to split the string, right?
-Then insert the updated block where it should be, right?
-Plus, all blocks have the same width so we know when to cut
-
-### *Also, how to access the answers for each element? And how do we choose from the available groups?*
+2. How to access the answers for each element? And how do we choose from the available groups?*
 
 - I'm thinking we have a separate list with all possible elements to choose from.
 - We can fill that list by going through each group selected and inserting all
@@ -41,37 +41,42 @@ to ask about and then popping their atomic number from the selection list.
 - Finally, we check if the list is empty yet, and if not then we keep going until it's done.  
 
 To figure out: 
-* [X] Ask which group(s) to use
+* [X] Ask which group(s) to use - Ask user and enter into a selection list.
 * [X] Continously update the Periodic Table correctly a.k.a
-      have the symbol match the slot
+      have the symbol match the slot - Figured it out.
+</details>
 
-### Smaller Details
+<details>
+<summary>Currently working on</summary>
+- [ ] How to arrange files a.k.a who does what?
+</details>
+
+## Smaller Details
 
 <details>
 <summary>Small things to keep in mind</summary>
-1 . Periodic Table groups: 
 
-    Start with:
-        - Alkalai Metals {Li, Na, K, Rb, Cs, Fr}
-        - Alkalai Earth Metals {Be, Mg, Ca, St, Ba, Ra}
-        - Post-transition Metals {Al, Ga, In, Sn, Tl, Pb, Bi, Po}
-        - Metalloids {B, Si, Ge, As, Sb, Te}
-        - Nonmentals {C, N, O, P, S, Se}
-        - Halogens {F, Cl, Br, I, At}
-        - Noble Gases {He, Ne, Ar, Kr, Xe, Rn}
+Periodic Table groups: 
+1. Start with:
+- Alkalai Metals {Li, Na, K, Rb, Cs, Fr}
+- Alkalai Earth Metals {Be, Mg, Ca, St, Ba, Ra}
+- Post-transition Metals {Al, Ga, In, Sn, Tl, Pb, Bi, Po}
+- Metalloids {B, Si, Ge, As, Sb, Te}
+- Nonmentals {C, N, O, P, S, Se}
+- Halogens {F, Cl, Br, I, At}
+- Noble Gases {He, Ne, Ar, Kr, Xe, Rn}
+    Total: 44 elements
+2. Could include: 
+- Transition Metals {Sc, Y, Ti, Zr, Hf, Rf, V, Nb, Ta, Db, Cr, Mo, W, Sg, Mn, Tc, Re, Bh, Fe, Ru, Os, Hs, Co, Rh, Ir, Ni, Pd, Pt, Cu, Ag, Au, Zn, Cd, Hg, Cn}
+- Lathanides {La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm , Yb, Lu}
+- Actinides {Ac, Th, Pa, U, Np, Pu, Am, Cm, Bk, Cf, Es, Fm, Md, No, Lr}
 
-        Total: 44 elements
-    Could include: 
-        - Transition Metals {Sc, Y, Ti, Zr, Hf, Rf, V, Nb, Ta, Db, Cr, Mo, W, Sg, Mn, Tc, 
-            Re, Bh, Fe, Ru, Os, Hs, Co, Rh, Ir, Ni, Pd, Pt, Cu, Ag, Au, Zn, Cd, Hg, Cn}
-        - Lathanides {La, Ce, Pr, Nd, Pm, Sm, Eu, Gd, Tb, Dy, Ho, Er, Tm , Yb, Lu}
-        - Actinides {Ac, Th, Pa, U, Np, Pu, Am, Cm, Bk, Cf, Es, Fm, Md, No, Lr}
+Total: 65
 
-        Total: 65
-    Total: 109 Elements
+Total: 109 Elements
 </details>
 
-### Visuals
+## Visuals
 <details>
 <summary>Visual notes</summary>
 Ok ok, I'm thinking this:
@@ -100,10 +105,10 @@ Questions:
         
 Yeah, that's all the questions I guess...
 
-    - Given the Symbol, you can fill out the name and Atomic Number
-    - Then, you say which group it can be found
-    - Finally, show a little mini Periodic Table with the element in its place if right
-      and if not then a little X instead 
+- Given the Symbol, you can fill out the name and Atomic Number
+- Then, you say which group it can be found
+- Finally, show a little mini Periodic Table with the element in its place if right\
+  and if not then a little X instead 
 
 Smt like this:
 ```
