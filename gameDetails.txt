@@ -1,14 +1,17 @@
 Idea: Memorization game for Periodic Table
 
-    * Start: 
+    Process:
+    * Start
+    * Ask user which groups to use
     * Present an Element block
     * Ask user to fill out details
     * Update Periodic Table
-    * If correct, insert the letter where it belongs
-    * If not, then use an X instead
-    
+      --> If correct, insert the letter where it belongs
+      --> If not, then use an X instead
+    * Keep repeating until all elements are used used
+
     To figure out:
-    * Ask which group(s) to use
+    * Ask which group(s) to use (DONE)
     * Continously update the Periodic Table correctly a.k.a
       have the symbol match the slot
 

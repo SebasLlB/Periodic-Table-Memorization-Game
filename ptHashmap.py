@@ -1,61 +1,68 @@
-### This is setting up the hashmap
+''' This is the Periodic Table Hashmap
+    Categorized as:
+        Periodic Table
+        -> Gropus
+           -> Atomic Number
+              -> Name
+              -> Symbol broken into rows
+'''
 periodicTable = {
     "alkaline metals":{
-        3  : {"name":"lithium", "atomicNumber":3, "symbol":["█       ","█     █ ","█       ","█    ███","█     █ ","█████ ███"]},
-        11 : {"name":"sodium", "atomicNumber":11, "symbol":["█   █     ","██  █     ","█ █ █  ███","█  ██ █   █","█   █ █████","█   █ █   █"]},
-        19 : {"name":"potassium", "atomicNumber":19, "symbol":[" █   █"," █  █ "," ███  "," █  █ "," █  █ "," █   █"]},
-        37 : {"name":"rubidium", "atomicNumber":37, "symbol":[" ███   █    "," █  █  █    "," ███   ███  "," █ █   █  █ "," █  █  █  █ "," █   █ ███  "]},
-        55 : {"name":"caesium", "atomicNumber":55, "symbol":["  ███         "," █   █  ███   "," █      █     "," █      ███   "," █   █     █  ","  ███   ███   "]},
-        87 : {"name":"francium", "atomicNumber":87, "symbol":[" █████      "," █          "," ███   ███  "," █     █    "," █     █    "," █     █    "]}
+        3  : {"name":"lithium", "symbol":["█       ","█     █ ","█       ","█    ███","█     █ ","█████ ███"]},
+        11 : {"name":"sodium", "symbol":["█   █     ","██  █     ","█ █ █  ███","█  ██ █   █","█   █ █████","█   █ █   █"]},
+        19 : {"name":"potassium", "symbol":[" █   █"," █  █ "," ███  "," █  █ "," █  █ "," █   █"]},
+        37 : {"name":"rubidium", "symbol":[" ███   █    "," █  █  █    "," ███   ███  "," █ █   █  █ "," █  █  █  █ "," █   █ ███  "]},
+        55 : {"name":"caesium", "symbol":["  ███         "," █   █  ███   "," █      █     "," █      ███   "," █   █     █  ","  ███   ███   "]},
+        87 : {"name":"francium", "symbol":[" █████      "," █          "," ███   ███  "," █     █    "," █     █    "," █     █    "]}
     },
     "alkaline earth metals":{
-        4  : {"name":"beryllium", "atomicNumber":4, "symbol":[" ███        "," █  █       "," ███   ███  "," █  █ █████ "," █  █ █     "," ███  ███   "]},
-        12 : {"name":"magnesium", "atomicNumber":12, "symbol":[" █   █       "," ██ ██  ███  "," █ █ █ █   █      "," █   █  ███"," █   █     █  "," █   █   ██"]},
-        20 : {"name":"calcium", "atomicNumber":20, "symbol":["  ███        "," █   █       "," █      ███  "," █     █   █ "," █   █ █████ ","  ███  █   █ "]},
-        38 : {"name":"strontium", "atomicNumber":38, "symbol":["  ███       "," █          ","  ███   ███ ","     █  █   ","     █  █   "," ███    █   "]},
-        56 : {"name":"barium", "atomicNumber":56, "symbol":[" ███        "," █  █       "," ███   ███  "," █  █ █   █ "," █  █ █████ "," ███  █   █ "]},
-        88 : {"name":"radium", "atomicNumber":88, "symbol":[" ███        "," █  █       "," ███   ███  "," █ █  █   █ "," █  █ █████ "," █   ██   █ "]}
+        4  : {"name":"beryllium", "symbol":[" ███        "," █  █       "," ███   ███  "," █  █ █████ "," █  █ █     "," ███  ███   "]},
+        12 : {"name":"magnesium", "symbol":[" █   █       "," ██ ██  ███  "," █ █ █ █   █      "," █   █  ███"," █   █     █  "," █   █   ██"]},
+        20 : {"name":"calcium", "symbol":["  ███        "," █   █       "," █      ███  "," █     █   █ "," █   █ █████ ","  ███  █   █ "]},
+        38 : {"name":"strontium", "symbol":["  ███       "," █          ","  ███   ███ ","     █  █   ","     █  █   "," ███    █   "]},
+        56 : {"name":"barium", "symbol":[" ███        "," █  █       "," ███   ███  "," █  █ █   █ "," █  █ █████ "," ███  █   █ "]},
+        88 : {"name":"radium", "symbol":[" ███        "," █  █       "," ███   ███  "," █ █  █   █ "," █  █ █████ "," █   ██   █ "]}
     },
     "post transition metals":{
-        13 : {"name":"aluminum", "atomicNumber":13, "symbol":["  ██     ██   "," █  █     █   "," █  █     █   "," ████     █   "," █  █     █   "," █  █    ███  "]},
-        31 : {"name":"gallium", "atomicNumber":31, "symbol":["  ███        "," █   █       "," █      ███  "," █  ██ █   █ "," █   █ █████ ","  ███  █   █ "]},
-        49 : {"name":"indium", "atomicNumber":49, "symbol":[" ███        ","  █          ","  █     ███  ","  █    █   █ ","  █    █   █ "," ███   █   █ "]},
-        50 : {"name":"tin", "atomicNumber":50, "symbol":[" █████    ██   ","   █        █   ","   █        █   ","   █        █   ","   █        █   ","   █       ███  "]},
-        81 : {"name":"thallium", "atomicNumber":81, "symbol":["  ███        "," █           ","  ███   ███  ","     █  █   █","     █  █   █"," ███    █   █ "]},
-        82 : {"name":"lead", "atomicNumber":82, "symbol":[" ███   █     "," █  █  █     "," ███   ███    "," █     █  █   "," █     █  █   "," █     ███    "]},
-        83 : {"name":"bismuth", "atomicNumber":83, "symbol":[" ███     █    "," █  █         "," ███    ███   "," █  █    █    "," █  █    █    "," ███    ███   "]},
-        84 : {"name":"polonium", "atomicNumber":84, "symbol":[" ███        "," █  █       "," ███   ███  "," █    █   █ "," █    █   █ "," █     ███  "]}
+        13 : {"name":"aluminum", "symbol":["  ██     ██   "," █  █     █   "," █  █     █   "," ████     █   "," █  █     █   "," █  █    ███  "]},
+        31 : {"name":"gallium", "symbol":["  ███        "," █   █       "," █      ███  "," █  ██ █   █ "," █   █ █████ ","  ███  █   █ "]},
+        49 : {"name":"indium", "symbol":[" ███        ","  █          ","  █     ███  ","  █    █   █ ","  █    █   █ "," ███   █   █ "]},
+        50 : {"name":"tin", "symbol":[" █████    ██   ","   █        █   ","   █        █   ","   █        █   ","   █        █   ","   █       ███  "]},
+        81 : {"name":"thallium", "symbol":["  ███        "," █           ","  ███   ███  ","     █  █   █","     █  █   █"," ███    █   █ "]},
+        82 : {"name":"lead", "symbol":[" ███   █     "," █  █  █     "," ███   ███    "," █     █  █   "," █     █  █   "," █     ███    "]},
+        83 : {"name":"bismuth", "symbol":[" ███     █    "," █  █         "," ███    ███   "," █  █    █    "," █  █    █    "," ███    ███   "]},
+        84 : {"name":"polonium", "symbol":[" ███        "," █  █       "," ███   ███  "," █    █   █ "," █    █   █ "," █     ███  "]}
     },
     "metalloids":{
-        5  : {"name":"boron", "atomicNumber":5, "symbol":[" ███   "," █  █  "," ███   "," █  █  "," █  █  "," ███   "]},
-        14 : {"name":"silicon", "atomicNumber":14, "symbol":["  ███    █    "," █            ","  ███   ███   ","     █   █    ","     █   █    "," ███    ███   "]},
-        32 : {"name":"germanium", "atomicNumber":32, "symbol":["  ███        "," █   █       "," █      ███  "," █  ██ █████ "," █   █ █     ","  ███  ███   "]},
-        33 : {"name":"arsenic", "atomicNumber":33, "symbol":["  ██         "," █  █   ███  "," █  █  █     "," ████   ███  "," █  █     █  "," █  █  ███   "]},
-        51 : {"name":"antimony", "atomicNumber":51, "symbol":["  ███   █     "," █      █     ","  ███   ███    ","     █  █  █   ","     █  █  █   ","  ███   ███    "]},
-        52 : {"name":"tellerium", "atomicNumber":52, "symbol":[" █████       ","   █         ","   █    ███  ","   █   █████ ","   █   █     ","   █    ███  "]}
+        5  : {"name":"boron","symbol":[" ███   "," █  █  "," ███   "," █  █  "," █  █  "," ███   "]},
+        14 : {"name":"silicon", "symbol":["  ███    █    "," █            ","  ███   ███   ","     █   █    ","     █   █    "," ███    ███   "]},
+        32 : {"name":"germanium", "symbol":["  ███        "," █   █       "," █      ███  "," █  ██ █████ "," █   █ █     ","  ███  ███   "]},
+        33 : {"name":"arsenic", "symbol":["  ██         "," █  █   ███  "," █  █  █     "," ████   ███  "," █  █     █  "," █  █  ███   "]},
+        51 : {"name":"antimony", "symbol":["  ███   █     "," █      █     ","  ███   ███    ","     █  █  █   ","     █  █  █   ","  ███   ███    "]},
+        52 : {"name":"tellerium", "symbol":[" █████       ","   █         ","   █    ███  ","   █   █████ ","   █   █     ","   █    ███  "]}
     },
     "nonmetals":{
-        1  : {"name":"hydrogen", "atomicNumber":1, "symbol":[" █   █"," █   █"," █████"," █   █"," █   █"," █   █"]},
-        6  : {"name":"carbon", "atomicNumber":6, "symbol":["  ███  "," █   █ "," █     "," █     "," █   █ ","  ███  "]},
-        7  : {"name":"nitrogen", "atomicNumber":7, "symbol":[" █   █"," ██  █"," █ █ █"," █  ██"," █   █"," █   █"]},
-        8  : {"name":"oxygen", "atomicNumber":8, "symbol":["  ███  "," █   █ "," █   █ "," █   █ "," █   █ ","  ███  "]},
-        15 : {"name":"phosphorus", "atomicNumber":15, "symbol":[" ███   "," █  █  "," ███   "," █     "," █     "," █     "]},
-        16 : {"name":"sulfur", "atomicNumber":16, "symbol":["  ███  "," █     ","  ███  ","     █ ","     █ "," ███   "]},
-        34 : {"name":"selenium", "atomicNumber":34, "symbol":["  ███        "," █           ","  ███   ███  ","     █  ████ ","     █  █    "," ███    ███  "]}
+        1  : {"name":"hydrogen", "symbol":[" █   █"," █   █"," █████"," █   █"," █   █"," █   █"]},
+        6  : {"name":"carbon", "symbol":["  ███  "," █   █ "," █     "," █     "," █   █ ","  ███  "]},
+        7  : {"name":"nitrogen", "symbol":[" █   █"," ██  █"," █ █ █"," █  ██"," █   █"," █   █"]},
+        8  : {"name":"oxygen", "symbol":["  ███  "," █   █ "," █   █ "," █   █ "," █   █ ","  ███  "]},
+        15 : {"name":"phosphorus", "symbol":[" ███   "," █  █  "," ███   "," █     "," █     "," █     "]},
+        16 : {"name":"sulfur", "symbol":["  ███  "," █     ","  ███  ","     █ ","     █ "," ███   "]},
+        34 : {"name":"selenium", "symbol":["  ███        "," █           ","  ███   ███  ","     █  ████ ","     █  █    "," ███    ███  "]}
     },
     "halogens":{
-        9  : {"name":"fluorine", "atomicNumber":9, "symbol":[" █████"," █     "," ███   "," █     "," █     "," █     "]},
-        17 : {"name":"chlorine", "atomicNumber":17, "symbol":["  ███    ██   "," █   █    █   "," █        █   "," █        █   "," █   █    █   ","  ███    ███  "]},
-        35 : {"name":"bromine", "atomicNumber":35, "symbol":[" ███        "," █  █       "," ███   ███  "," █  █  █    "," █  █  █    "," ███   █    "]},
-        53 : {"name":"iodine", "atomicNumber":53, "symbol":[" ███  ","  █   ","  █   ","  █   ","  █   "," ███  "]},
-        85 : {"name":"astatine", "atomicNumber":85, "symbol":["  ██     █    "," █  █    █    "," █  █   ████  "," ████    █    "," █  █    █    "," █  █    █    "]}
+        9  : {"name":"fluorine", "symbol":[" █████"," █     "," ███   "," █     "," █     "," █     "]},
+        17 : {"name":"chlorine", "symbol":["  ███    ██   "," █   █    █   "," █        █   "," █        █   "," █   █    █   ","  ███    ███  "]},
+        35 : {"name":"bromine", "symbol":[" ███        "," █  █       "," ███   ███  "," █  █  █    "," █  █  █    "," ███   █    "]},
+        53 : {"name":"iodine", "symbol":[" ███  ","  █   ","  █   ","  █   ","  █   "," ███  "]},
+        85 : {"name":"astatine", "symbol":["  ██     █    "," █  █    █    "," █  █   ████  "," ████    █    "," █  █    █    "," █  █    █    "]}
     },
     "noble gases":{
-        2  : {"name":"helium", "atomicNumber":2, "symbol":[" █   █      "," █   █      "," █████  ███ "," █   █ █████"," █   █ █    "," █   █  ███ "]},
-        10 : {"name":"neon", "atomicNumber":10, "symbol":[" █   █      "," ██  █      "," █ █ █  ███ "," █  ██ █████"," █   █ █    "," █   █  ███ "]},
-        18 : {"name":"argon", "atomicNumber":18, "symbol":["  ██         "," █  █        "," █  █   ███  "," ████  █     "," █  █  █     "," █  █  █     "]},
-        36 : {"name":"krypton", "atomicNumber":36, "symbol":[" █   █      "," █  █       "," ███   ███  "," █  █  █    "," █  █  █    "," █   █ █    "]},
-        54 : {"name":"xenon", "atomicNumber":54, "symbol":[" █   █      ","  █ █       ","   █    ███ ","  █ █  █████"," █   █ █    "," █   █  ███ "]},
-        86 : {"name":"radon", "atomicNumber":86, "symbol":[" ███        "," █  █       "," ███   ███  "," █ █  █   █ "," █  █ █   █ "," █   ██   █ "]}
+        2  : {"name":"helium", "symbol":[" █   █      "," █   █      "," █████  ███ "," █   █ █████"," █   █ █    "," █   █  ███ "]},
+        10 : {"name":"neon", "symbol":[" █   █      "," ██  █      "," █ █ █  ███ "," █  ██ █████"," █   █ █    "," █   █  ███ "]},
+        18 : {"name":"argon", "symbol":["  ██         "," █  █        "," █  █   ███  "," ████  █     "," █  █  █     "," █  █  █     "]},
+        36 : {"name":"krypton", "symbol":[" █   █      "," █  █       "," ███   ███  "," █  █  █    "," █  █  █    "," █   █ █    "]},
+        54 : {"name":"xenon", "symbol":[" █   █      ","  █ █       ","   █    ███ ","  █ █  █████"," █   █ █    "," █   █  ███ "]},
+        86 : {"name":"radon", "symbol":[" ███        "," █  █       "," ███   ███  "," █ █  █   █ "," █  █ █   █ "," █   ██   █ "]}
     }
 }
