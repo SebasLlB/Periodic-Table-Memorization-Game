@@ -1,4 +1,5 @@
-from selectElement import chooseElements
+from selectElement import chooseElements, askQuestions
+
 
 ## Greeting
 print("\n***Welcome!*** \nType which groups you'd like from the following: \n")
@@ -13,3 +14,4 @@ chosenGroups = [group.replace(" ","") for group in userGroups.lower().split(",")
 ## Then, we can send this answer list to selectElement.py!
 
 chooseElements(chosenGroups)
+askQuestions()

@@ -17,20 +17,39 @@ def chooseElements(userGroups):
     print("All elements we'll use, please check!")
     print(chosenElements) 
 
+def printSymbol(atomicNumber):
+    for group in periodicTable:
+        for element in periodicTable[group]:
+            if element == atomicNumber:
+                for row in periodicTable[group][element]["symbol"]:
+                    print(row)
+
 ##This part goes through each element randomly and pulls out their symbol
 ##Chosen elements list gets smaller as each element is retrieved, until there are no more elements left
-while len(chosenElements) > 0:
-    print(chosenElements)
+def askQuestions():
+        ## First, we get a random index for chosenElements[]
+        randomIndex = random.randint(0,len(chosenElements)-1)
 
-    randomIndex = random.randint(0,len(chosenElements)-1)
-    print("index: " + str(randomIndex))
-    print("Chosen element: " + str(chosenElements[randomIndex]))
+        ## Next, we print the block
+        print("\n* - - - - - - *\n")
+        printSymbol(chosenElements[randomIndex])
+        print("\n* - - - - - - *\n")
+            
+        userANumber = input("What's the Atomic Number? ")
 
-    for group in periodicTable:
-        for atomicN in periodicTable[group]:
-            if atomicN == chosenElements[randomIndex]:
-                for row in periodicTable[group][atomicN]["symbol"]:
-                    print(row)
-    print()
+        userEName = input("What's the element's name? ")
+        userEName = userEName.lower()
+        
+        userEGroup = input("What group do they belong? ")
+        userEGroup = userEGroup.lower().replace(" ","")
+
+        print(userEName + ", " + userEGroup + ", " + userANumber)            
+            
+        del chosenElements[randomIndex]
+
+def checkQuestions():
+    ANCorrect = False
+    ENCorrect = False
+    EGCorrect = False
+
     
-    del chosenElements[randomIndex]

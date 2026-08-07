@@ -1,5 +1,3 @@
-import random
-
 printPT = ["[!-]                                                                [!-]",
             "[!-][!-]                                        [!-][!-][!-][!-][!-][!-]",
             "[!-][!-]                                        [!-][!-][!-][!-][!-][!-]",
@@ -12,10 +10,10 @@ printPT = ["[!-]                                                                
             "        [!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-]"
             ]
 
-def printPeriodic():
+def printPeriodic(answers, atomicNumber):
     ###This is testing the symbol replacement
 
-    element = random.randint(1,111)
+    element = atomicNumber
     print(element)
 
     if element<3:
