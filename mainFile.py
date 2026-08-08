@@ -1,6 +1,5 @@
 from selectElement import chooseElements, askQuestions
 
-
 ## Greeting
 print("\n***Welcome!*** \nType which groups you'd like from the following: \n")
 print("Alkaline metals, Alkaline earth metals, Post transition metals")

@@ -18,6 +18,7 @@ def chooseElements(userGroups):
     print("All elements we'll use, please check!")
     print(chosenElements) 
 
+## Retrieve element abbreviation as it prints the symbol
 def printSymbol(atomicNumber):
     for group in periodicTable:
         for element in periodicTable[group]:
@@ -27,10 +28,12 @@ def printSymbol(atomicNumber):
                     print(row)
     return abbr
 
+## Checks answers from user
 def checkQuestions(userEN, userEG, atomicNumber):
     ENCorrect = False
     EGCorrect = False
 
+    ##Checks wheter user Names and Group answers are correct
     for group in periodicTable:
         if group.lower().replace(" ","") == userEG:
             EGCorrect = True
@@ -38,8 +41,7 @@ def checkQuestions(userEN, userEG, atomicNumber):
             if element == atomicNumber:
                 if periodicTable[group][element]["name"] == userEN:
                     ENCorrect = True  
-                    
-                
+    
     if  ENCorrect == EGCorrect == True:
         return True
     else:
@@ -57,7 +59,8 @@ def askQuestions():
         print("\n* - - - - - - *\n")
         abbreviation = printSymbol(actualElement)
         print("\n* - - - - - - *\n")
-            
+
+        ## Then, the questions along answer formatting
         userANumber = input("What's the Atomic Number? ")
 
         userEName = input("What's the element's name? ")
@@ -66,20 +69,17 @@ def askQuestions():
         userEGroup = input("What group do they belong? ")
         userEGroup = userEGroup.lower().replace(" ","")          
 
+        ## Verify answers
         answers = checkQuestions(userEName, userEGroup, actualElement)
 
+        ##Final check
         if (int(userANumber) == actualElement):
             answers = answers
         else: 
             answers = False
-        
+
+        ## Print Visual periodic table
         printPeriodic(answers, abbreviation, chosenElements[randomIndex])
-            
+
+        ## Delete element from chosenElements[]  
         del chosenElements[randomIndex]
-
-        
-        
-
-
-
-    
