@@ -1,4 +1,5 @@
 from ptHashmap import periodicTable
+from ptPrinting import printPeriodic
 import random
 
 ## This is where selected groups and their corresponding elements are stored
@@ -21,18 +22,40 @@ def printSymbol(atomicNumber):
     for group in periodicTable:
         for element in periodicTable[group]:
             if element == atomicNumber:
+                abbr = periodicTable[group][element]["abbr"]
                 for row in periodicTable[group][element]["symbol"]:
                     print(row)
+    return abbr
+
+def checkQuestions(userEN, userEG, atomicNumber):
+    ENCorrect = False
+    EGCorrect = False
+
+    for group in periodicTable:
+        if group.lower().replace(" ","") == userEG:
+            EGCorrect = True
+        for element in periodicTable[group]:
+            if element == atomicNumber:
+                if periodicTable[group][element]["name"] == userEN:
+                    ENCorrect = True  
+                    
+                
+    if  ENCorrect == EGCorrect == True:
+        return True
+    else:
+        return False
 
 ##This part goes through each element randomly and pulls out their symbol
 ##Chosen elements list gets smaller as each element is retrieved, until there are no more elements left
 def askQuestions():
+    while(len(chosenElements) > 0):
         ## First, we get a random index for chosenElements[]
         randomIndex = random.randint(0,len(chosenElements)-1)
+        actualElement = chosenElements[randomIndex]
 
         ## Next, we print the block
         print("\n* - - - - - - *\n")
-        printSymbol(chosenElements[randomIndex])
+        abbreviation = printSymbol(actualElement)
         print("\n* - - - - - - *\n")
             
         userANumber = input("What's the Atomic Number? ")
@@ -41,15 +64,22 @@ def askQuestions():
         userEName = userEName.lower()
         
         userEGroup = input("What group do they belong? ")
-        userEGroup = userEGroup.lower().replace(" ","")
+        userEGroup = userEGroup.lower().replace(" ","")          
 
-        print(userEName + ", " + userEGroup + ", " + userANumber)            
+        answers = checkQuestions(userEName, userEGroup, actualElement)
+
+        if (int(userANumber) == actualElement):
+            answers = answers
+        else: 
+            answers = False
+        
+        printPeriodic(answers, abbreviation, chosenElements[randomIndex])
             
         del chosenElements[randomIndex]
 
-def checkQuestions():
-    ANCorrect = False
-    ENCorrect = False
-    EGCorrect = False
+        
+        
+
+
 
     
