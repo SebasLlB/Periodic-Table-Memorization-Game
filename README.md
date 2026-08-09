@@ -1,7 +1,9 @@
 # **Idea: Memorization game for Periodic Table**
 
+## Ever got asked to memorize the elements on a periodic table, and are tired of the browser sites having waaaay to many ads??
+WELL, this simple terminal game can definitely help!
+Just tell it what groups you'd like to use and watch as you slowly fill out your Periodic Table!
 
-### Purpose: Develop a memorization game for periodic table elements. This will aid students trying to memorize the name, atomic number, and group that certain elements belong to.
 
 ### Flowchart:
 
