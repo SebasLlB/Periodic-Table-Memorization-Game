@@ -2,17 +2,40 @@
 
 ## Process:
 <details>
-<Summary>General flowchart, updated 8/6/2026</Summary>
+<Summary>Overall File flowchart, updated 8/6/2026</Summary>
 
-* Start (Main)
-* Ask user which groups to use (Main)
-* Present an Element block (selectElement)
-* Ask user to fill out details (Main)
-* Update Periodic Table (ptPrint)\
+* Start (mainFile.py)
+* Ask user which groups to use (mainFile.py --> selectElement.py)
+* Present an Element block (selectElement.py --> ptPrinting --> selectElement.py)
+* Ask user to fill out details (selectElement.py)
+* Update Periodic Table (selectElement.py -- > ptPrint --> selectElement.py)\
   --> If correct, insert the letter where it belongs\
   --> If not, then use an X instead
-* Keep repeating until all elements are used used (Main)
+* Keep repeating until all elements are used used (selectElement.py)
+<details>
+<summary>Development Flowchart</summary>
 
+* START: Start program
+* ASK: Ask user which groups to use
+* RETRIEVE: Retrieve chosen elements
+* PRESENT: Present an Element block and ask user for answers
+* EVALUATE: Check answers\
+  --> If correct, insert the letter where it belongs\
+  --> If not, then use an X instead
+* END? Check if all the elements have been presented
+* SHOW: Show results of the match
+<details>
+    <summary>Visual Flow</summary>
+
+```mermaid
+    graph TD;
+    START-->ASK-->RETRIEVE-->PRESENT-->EVALUATE
+    EVALUATE-->Right-->END-->Yes-->SHOW                                
+    EVALUATE-->Wrong-->END?-->No-->PRESENT
+```
+
+</details>
+  </details>
 </details>
 
 ## Ideas
@@ -48,7 +71,7 @@ To figure out:
 
 <details>
 <summary>Currently working on</summary>
-- [ ] How to arrange files a.k.a who does what?
+- [X] How to arrange files a.k.a who does what?
 </details>
 
 ## Smaller Details
@@ -132,3 +155,6 @@ Smt like this:
 ```
 Yeaahhh... Also, have it animated?
 </details>
+
+
+

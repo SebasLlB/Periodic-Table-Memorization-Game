@@ -1,30 +1,21 @@
 # **Idea: Memorization game for Periodic Table**
 
-## Ever got asked to memorize the elements on a periodic table, and are tired of the browser sites having waaaay to many ads??
-WELL, this simple terminal game can definitely help!
-Just tell it what groups you'd like to use and watch as you slowly fill out your Periodic Table!
+### Ever got tasked with memorizing elements, but don't want to find an online site without ads?
 
+<span style="font-size: 18px">
+You can try this terminal based game to help memorize the elements and their place, no internet connection required!  
+<br>
+Slowly fill out each group that you wish to memorize and watch as how your Periodic table starts to fill out!
 
-### Flowchart:
+<br>![Intro page for users](img\userIntroPage.png)
 
-* START: Start program
-* ASK: Ask user which groups to use
-* RETRIEVE: Retrieve chosen elements
-* PRESENT: Present an Element block and ask user for answers
-* EVALUATE: Check answers\
-  --> If correct, insert the letter where it belongs\
-  --> If not, then use an X instead
-* END? Check if all the elements have been presented
-* SHOW: Show results of the match
-<details>
-    <summary>Click to expand Flowchart</summary>
+Here's how the questions look:
 
-```mermaid
-    graph TD;
-    START-->ASK-->RETRIEVE-->PRESENT-->EVALUATE
-    EVALUATE-->Right-->END-->Yes-->SHOW                                
-    EVALUATE-->Wrong-->END?-->No-->PRESENT
-```
+![Example questions](img\questionBox.png)
 
-</details>
+Solve each question to fill out their spot on the periodic table!
 
+![Visual Periodic Table](img\visualPeriodicTable.png)
+
+Check Game Details for key game insights.
+</span>
