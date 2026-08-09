@@ -1,4 +1,4 @@
-'''printPT = ["[!-]                                                                [!-]",
+fullPrintPT = ["[!-]                                                                [!-]",
             "[!-][!-]                                        [!-][!-][!-][!-][!-][!-]",
             "[!-][!-]                                        [!-][!-][!-][!-][!-][!-]",
             "[!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-]",
@@ -9,7 +9,7 @@
             "        [!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-]",
             "        [!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-][!-]"
             ]
-'''
+
 printPT = ["                                                                        ",
            "                                                                        ",
            "                                                                        ",
@@ -20,6 +20,10 @@ printPT = ["                                                                    
            "                                                                        ",
            "                                                                        ",
            "                                                                        "]
+def printEmptyPeriodic():
+    for row in fullPrintPT:
+        print(row)
+
 def printPeriodic(answers, abbreviation, atomicNumber):
     ###This is testing the symbol replacement
     row = 0
@@ -80,6 +84,6 @@ def printPeriodic(answers, abbreviation, atomicNumber):
     else:
         printPT[row] = printPT[row][0:element+1] + abbreviation + printPT[row][element+3:len(printPT[0])]
 
-    for i in printPT:
-        print(i)
+    for row in printPT:
+        print(row)
 

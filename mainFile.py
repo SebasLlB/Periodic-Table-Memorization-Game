@@ -1,6 +1,8 @@
 from selectElement import chooseElements, askQuestions
+from ptPrinting import printEmptyPeriodic
 
 ## Greeting
+printEmptyPeriodic()
 print("\n***Welcome!*** \nType which groups you'd like from the following: \n")
 print("Alkaline metals, Alkaline earth metals, Post transition metals")
 print("Metalloids, Nonmetals, Halogens, Noble Gases")
